@@ -1,4 +1,9 @@
-.p1 {
-  color: rgb(196, 151, 151);
-  font-size: 20px;
+.p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: rgb(187, 0, 255);
+}
+.span {
+  color: black;
+  font-size: medium;
 }
