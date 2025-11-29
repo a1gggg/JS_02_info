@@ -4,44 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Новинки з Японії</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./style/indexPageS.css" />
   </head>
+  <!-- #title off -->
   <body>
     <header id="header" class="header">
-      <img src="image/images.jpg" class="logo" alt="Логотип" />
-      <nav id="nav">
-        <ul class="ul_header">
-          <li class="li_header">
-            <a href="index.html" target="_blank" class="header_link">Главная</a>
-          </li>
-          <li class="li_header">
-            <a href="index.html" target="_blank" class="header_link">Новинки</a>
-          </li>
-          <li class="li_header">
-            <a href="index.html" target="_blank" class="header_link"
-              >Категорії</a
-            >
-          </li>
-          <li class="li_header">
-            <a href="index.html" target="_blank" class="header_link"
-              >В дорозі</a
-            >
-          </li>
-          <li class="li_header">
-            <a href="#Заявка" class="header_link">Відправити заявку </a>
-          </li>
-        </ul>
-        <!-- Навігація-->
-      </nav>
+      <section class="header_logo" id="header_logo">
+        <img src="image/images.jpg" class="logo" id="logo" alt="Логотип" />
+      </section>
+
       <section>
+        <nav id="nav_header" class="nav_header">
+          <ul class="ul_header" id="ul_header">
+            <li class="li_header" id="li_header">
+              <a href="index.html" target="_blank" class="header_link"
+                >Головна</a
+              >
+            </li>
+            <li class="li_header" id="li_header">
+              <a href="index.html" target="_blank" class="header_link"
+                >Новинки</a
+              >
+            </li>
+            <li class="li_header" id="li_header">
+              <a href="index.html" target="_blank" class="header_link"
+                >Категорії</a
+              >
+            </li>
+            <li class="li_header" id="li_header">
+              <a href="index.html" target="_blank" class="header_link"
+                >В дорозі</a
+              >
+            </li>
+            <li class="li_header" id="li_header">
+              <button
+                type="header_button"
+                id="header_button"
+                target="_blank"
+                class="header_link"
+              >
+                Відправити заявку на розміщення товару
+              </button>
+            </li>
+          </ul>
+          <!-- Навігація-->
+        </nav>
+      </section>
+    </header>
+
+    <main id="main">
+      <!-- Основной контент страницы -->
+      <section id="main_section" class="hero_section">
         <h1 class="h1_header_title_class">
           <span class="accent">Новинки</span> з Японії
         </h1>
-      </section>
-    </header>
-    <main id="main">
-      <!-- Основной контент страницы -->
-      <section id="section">
         <!-- Блок с заголовком и содержанием-->
       </section>
       <article id="article">
@@ -55,8 +73,8 @@
       <section>
         <h2 lang="uk">Що тут можна знайти?</h2>
         <p class="p" lang="uk">
-          <span class="span" lang="us">Info</span> Новинки з Японії для себе та
-          сім'ї.
+          <span class="span_info" lang="us">Info</span> Новинки з Японії для
+          себе та сім'ї.
         </p>
         <img src="image/Чібі.jpg" alt="Чібі" />
       </section>
