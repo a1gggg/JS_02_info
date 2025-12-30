@@ -68,13 +68,44 @@ let userName = ['Ruslan', 'Galina', 'Julia',]
 let fdsfds = userName.join('; ');
 console.log(fdsfds  )*/
 
-let asdr = 'list-style-image';
+let asdr = '-webkit-transition';
 
 function camelize(str) {
-  let str1 = str.split('-');
-  let str2 = str1.map(item => item.charAt(0).toUpperCase() + item.slice(1));
-  let str3 = str2.join('');
-  return str3;
+  let str1 = str.split('');
+  let str2 = str1.map((item, index, array) => {
+    if (array[index - 1] === '-') {
+      return item.toUpperCase();
+    }
+    return item;
+  });
+  let str3 = str2.filter((item, index, array) => {
+    for (let index = 0; index < array.length; index++) {
+      if (item == '-') {
+        return;
+      }
+      return item;
+    }
+  });
+  let str4 = str3.join('');
+  return str4;
 }
 let dfg = camelize(asdr);
 console.log(dfg);
+//******************************************************* */
+function camelize1(str) {
+  return str.split('-').map((word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)).join('');
+}
+let dfg1 = camelize1(asdr);
+console.log(dfg);
+
+/*
+function camelize(str) {
+  return str
+    .split('-') // розбиваємо 'my-long-word' на масив елементів ['my', 'long', 'word']
+    .map(
+      // робимо першу літеру велику для всіх елементів масиву, крім першого
+      // конвертуємо ['my', 'long', 'word'] в ['my', 'Long', 'Word']
+      (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join(''); // зʼєднуємо ['my', 'Long', 'Word'] в 'myLongWord'
+}*/
